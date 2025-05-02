@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
+  title: "Space Portfolio by WEBDEVBIV",
   description: "Personal Portfolio App by WEBDEVBIV",
 };
 
