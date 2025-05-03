@@ -1,6 +1,19 @@
 @import "tailwindcss";
 /* @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"); */
 
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  outline: 1px solid red;
+}
+
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
@@ -58,12 +71,4 @@
 }
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  outline: 1px solid red;
 }

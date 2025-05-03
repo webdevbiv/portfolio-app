@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/Main/StarBackground";
-import NavBar from "@/components/NavBar.tsx/NavBar";
+import NavBar from "@/components/NavBar/NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} flex flex-col w-full justify-center antialiased bg-[#030014] overflow-y-scroll`}
+        className={`flex flex-col ${geistSans.variable} ${geistMono.variable}  antialiased bg-[#030014] `}
       >
-        <StarsCanvas />
         <NavBar />
         {children}
+        {/* <StarsCanvas /> */}
       </body>
     </html>
   );
