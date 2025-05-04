@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <Container className="fixed w-full top-0  shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-100">
-      <div className="flex  justify-between items-center h-full">
+      <div className="flex justify-between items-center w-full h-full">
         {/* Logo */}
         <NavLogo />
         {/* Desktop Nav */}
