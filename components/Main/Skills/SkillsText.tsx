@@ -8,7 +8,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 const SkillsText = () => {
   return (
-    <div className="flex flex-col items-center justify-center mb-6">
+    <div className="flex flex-col items-center justify-center mb-11">
       <motion.div
         variants={slideInFromTop}
         className="Welcome-box py-[12px] px-[10px] mb-6 border border-[#7042f88b] bg-[#03001481]"

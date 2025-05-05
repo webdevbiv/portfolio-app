@@ -21,22 +21,20 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills">
-      <div className="container flex-col">
+    <section id="skills" className="relative overflow-hidden">
+      <div className="container flex-col ">
         <div className="my-[68px] md:my-20">
           <SkillsText />
 
           {skillCategories.map((category, catIndex) => (
             <div
               key={category.name}
-              className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center"
+              className="flex flex-row justify-around flex-wrap mb-11  gap-10 items-center"
             >
               {category.data.map((image, index) => (
                 <SkillsList
                   key={image.skill_name}
                   src={image.Image}
-                  width={image.width}
-                  height={image.height}
                   index={index + catIndex * 4} // unique index across categories
                   skill_text={image.skill_name}
                 />

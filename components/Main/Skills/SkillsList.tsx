@@ -7,13 +7,12 @@ import { Tooltip } from "react-tooltip";
 
 interface Props {
   src: string;
-  width: number;
-  height: number;
+
   index: number;
   skill_text: string;
 }
 
-const SkillsList = ({ src, width, height, index, skill_text }: Props) => {
+const SkillsList = ({ src, index, skill_text }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -38,7 +37,13 @@ const SkillsList = ({ src, width, height, index, skill_text }: Props) => {
         data-tooltip-content={skill_text}
         className="flex justify-center items-center group  cursor-pointer w-[80px] h-[80px]"
       >
-        <Image src={src} width={width} height={height} alt={skill_text} />
+        <Image
+          src={src}
+          width={80}
+          height={80}
+          alt={skill_text}
+          className="skill-img"
+        />
       </motion.div>
 
       <Tooltip id={`tooltip-${index}-${skill_text}`} place="top" offset={-1} />

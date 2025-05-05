@@ -78,7 +78,7 @@ const HeroContent = () => {
             alt="work icons"
             height={650}
             width={650}
-            className=""
+            priority
           />
         </motion.div>
       </motion.div>

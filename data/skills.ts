@@ -55,14 +55,14 @@ export const Skills_style = [
 
 export const Skills_libraries = [
   {
-    skill_name: "React js",
-    Image: "/images/skills/react.png",
+    skill_name: "React Router",
+    Image: "/images/skills/router.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "React Router",
-    Image: "/images/skills/router.png",
+    skill_name: "React js",
+    Image: "/images/skills/react.png",
     width: 80,
     height: 80,
   },
@@ -88,7 +88,7 @@ export const Skills_backend = [
     height: 80,
   },
   {
-    skill_name: "axios",
+    skill_name: "Axios",
     Image: "/images/skills/axios.png",
     width: 80,
     height: 80,
@@ -136,7 +136,7 @@ export const Skills_bundlers = [
     height: 80,
   },
   {
-    skill_name: "Github",
+    skill_name: "Express js",
     Image: "/images/skills/next.png",
     width: 70,
     height: 70,
