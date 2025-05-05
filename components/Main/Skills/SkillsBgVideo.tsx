@@ -1,7 +1,7 @@
 const SkillsBgVideo = () => {
   return (
-    <div className="w-full h-full absolute">
-      <div className="w-full h-full z-[-10] opacity-40 absolute flex items-center justify-center bg-cover">
+    <div className="w-full h-full absolute z-[-10]">
+      <div className="w-full h-full  opacity-40 absolute flex items-center justify-center bg-cover">
         <video
           autoPlay
           loop

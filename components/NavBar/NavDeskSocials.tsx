@@ -1,4 +1,4 @@
-import { Socials } from "@/constants";
+import { Socials } from "@/data/socials";
 import Image from "next/image";
 
 const NavDeskSocials = () => {

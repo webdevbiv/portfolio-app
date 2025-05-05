@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/Main/StarBackground";
 import NavBar from "@/components/NavBar/NavBar";
+import "react-tooltip/dist/react-tooltip.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
