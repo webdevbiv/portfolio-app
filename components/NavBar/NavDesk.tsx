@@ -1,6 +1,6 @@
 const NavDesk = () => {
   return (
-    <div className="hidden md:flex items-center gap-5 md:gap-12 border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200">
+    <div className="hidden md:flex items-center mr-[2.5rem] gap-5 md:gap-12 border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200">
       <a href="#about-me" className="cursor-pointer">
         About me
       </a>

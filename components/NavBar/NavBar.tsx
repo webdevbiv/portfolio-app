@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import Container from "../Container/Container";
 import NavDesk from "./NavDesk";
 import NavDeskSocials from "./NavDeskSocials";
 import NavLogo from "./NavLogo";
@@ -12,8 +11,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <Container className="fixed w-full top-0  shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-100">
-      <div className="flex justify-between items-center w-full h-full">
+    <div className="fixed w-full top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-100">
+      <div className="container">
         {/* Logo */}
         <NavLogo />
         {/* Desktop Nav */}
@@ -21,7 +20,7 @@ const Navbar = () => {
         {/* Desktop Socials */}
         <NavDeskSocials />
         {/* Mobile Menu Button */}
-        <div className=" flex items-center md:hidden ">
+        <div className="flex items-center md:hidden ">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? (
               <IoMdClose size={40} className="text-gray-200" />
@@ -34,7 +33,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {isMenuOpen && <MobileMenu setIsMenuOpen={setIsMenuOpen} />}
-    </Container>
+    </div>
   );
 };
 

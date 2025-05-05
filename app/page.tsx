@@ -1,6 +1,6 @@
 import Encryption from "@/components/Main/Encryption";
 import Footer from "@/components/Main/Footer";
-import Hero from "@/components/Main/Hero";
+import Hero from "@/components/Main/Hero/Hero";
 import Projects from "@/components/Main/Projects";
 import Skills from "@/components/Main/Skills";
 
