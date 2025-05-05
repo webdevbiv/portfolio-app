@@ -14,12 +14,12 @@ const HeroContent = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-col md:flex-row items-center justify-center mt-40 w-full z-[20]"
+        className="flex flex-col md:flex-row items-center justify-center w-full z-[20] mt-40 mb-10 md:mb-20 "
       >
         <div className="h-full w-full justify-center items-center text-center md:text-start">
           <motion.div
             variants={slideInFromTop}
-            className="Welcome-box mb-6 mx-auto md:mx-0 py-[12px] px-[10px] border border-[#7042f88b] bg-[#03001481] "
+            className="Welcome-box mb-6 mx-auto md:mx-0 py-[12px] px-[10px] border border-[#7042f88b] bg-[#03001481]"
           >
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
             <h1 className="Welcome-text text-[13px]">
@@ -71,13 +71,14 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromRight(0.8)}
-          className="w-full h-full flex justify-center items-center"
+          className="display-block w-full h-full flex justify-center items-center"
         >
           <Image
             src="/mainIconsdark.svg"
             alt="work icons"
             height={650}
             width={650}
+            className=""
           />
         </motion.div>
       </motion.div>

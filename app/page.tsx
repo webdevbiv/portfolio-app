@@ -2,14 +2,14 @@ import Encryption from "@/components/Main/Encryption";
 import Footer from "@/components/Main/Footer";
 import Hero from "@/components/Main/Hero/Hero";
 import Projects from "@/components/Main/Projects";
-import Skills from "@/components/Main/Skills";
+import Skills from "@/components/Main/Skills/Skills";
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
-      <div className="flex flex-col ">
+    <main className="">
+      <div className="">
         <Hero />
-        {/* <Skills /> */}
+        <Skills />
         {/* <Encryption /> */}
         {/* <Projects /> */}
         {/* <Footer /> */}

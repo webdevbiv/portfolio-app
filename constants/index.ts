@@ -77,7 +77,6 @@ export const Skill_data = [
     width: 40,
     height: 40,
   },
-
 ];
 
 export const Socials = [

@@ -10,7 +10,7 @@ interface Props {
   height: number;
   index: number;
 }
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillsList = ({ src, width, height, index }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -39,4 +39,4 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
     </>
   );
 };
-export default SkillDataProvider;
+export default SkillsList;
