@@ -5,7 +5,7 @@ interface Props {
   title: string;
   description: string;
 }
-const ProjectCard = ({ src, title, description }: Props) => {
+const ProjectsCard = ({ src, title, description }: Props) => {
   return (
     <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] ">
       <Image
@@ -23,4 +23,4 @@ const ProjectCard = ({ src, title, description }: Props) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectsCard;
