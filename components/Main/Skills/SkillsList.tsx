@@ -7,22 +7,26 @@ import { Tooltip } from "react-tooltip";
 
 interface Props {
   src: string;
-
-  index: number;
-  skill_text: string;
+  catIndex: number; // index of the category (row)
+  index: number; // index of the item inside category
+  skillText: string;
 }
 
-const SkillsList = ({ src, index, skill_text }: Props) => {
+const SkillsList = ({ src, index, catIndex, skillText }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
 
-  const imageVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
+  const totalRowDuration = 0.7; // total animation duration for one row (adjust as needed)
+  const staggerWithinRow = 0.1; // delay between items inside same row
 
-  const animationDelay = 0.3 * index;
+  const categoryDelay = catIndex * totalRowDuration;
+  const animationDelay = categoryDelay + index * staggerWithinRow;
+
+  const imageVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
     <>
@@ -31,22 +35,25 @@ const SkillsList = ({ src, index, skill_text }: Props) => {
         initial="hidden"
         animate={inView ? "visible" : ""}
         variants={imageVariants}
-        custom={index}
-        transition={{ delay: animationDelay }}
-        data-tooltip-id={`tooltip-${index}-${skill_text}`}
-        data-tooltip-content={skill_text}
-        className="flex justify-center items-center group  cursor-pointer w-[80px] h-[80px]"
+        transition={{ delay: animationDelay, duration: 0.5 }}
+        data-tooltip-id={`tooltip-${catIndex}-${index}-${skillText}`}
+        data-tooltip-content={skillText}
+        className="flex justify-center items-center group cursor-pointer w-[80px] h-[80px]"
       >
         <Image
           src={src}
           width={80}
           height={80}
-          alt={skill_text}
+          alt={skillText}
           className="skill-img"
         />
       </motion.div>
 
-      <Tooltip id={`tooltip-${index}-${skill_text}`} place="top" offset={-1} />
+      <Tooltip
+        id={`tooltip-${catIndex}-${index}-${skillText}`}
+        place="top"
+        offset={-1}
+      />
     </>
   );
 };

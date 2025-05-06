@@ -35,8 +35,9 @@ const Skills = () => {
                 <SkillsList
                   key={image.skill_name}
                   src={image.Image}
-                  index={index + catIndex * 4} // unique index across categories
-                  skill_text={image.skill_name}
+                  index={index + 1}
+                  catIndex={catIndex}
+                  skillText={image.skill_name}
                 />
               ))}
             </div>
