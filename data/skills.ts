@@ -23,6 +23,18 @@ export const Skills_base = [
     width: 80,
     height: 80,
   },
+  {
+    skill_name: "Figma",
+    Image: "/images/skills/figma.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Github",
+    Image: "/images/skills/git.png",
+    width: 80,
+    height: 80,
+  },
 ];
 
 export const Skills_style = [
@@ -113,20 +125,20 @@ export const Skills_backend = [
   },
 ];
 
-export const Skills_tools = [
-  {
-    skill_name: "Figma",
-    Image: "/images/skills/figma.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Github",
-    Image: "/images/skills/git.png",
-    width: 80,
-    height: 80,
-  },
-];
+// export const Skills_tools = [
+//   {
+//     skill_name: "Figma",
+//     Image: "/images/skills/figma.png",
+//     width: 80,
+//     height: 80,
+//   },
+//   {
+//     skill_name: "Github",
+//     Image: "/images/skills/git.png",
+//     width: 80,
+//     height: 80,
+//   },
+// ];
 
 export const Skills_bundlers = [
   {

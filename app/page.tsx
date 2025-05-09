@@ -1,4 +1,4 @@
-import Footer from "@/components/Main/Footer";
+import Footer from "@/components/Main/Footer/Footer";
 import Hero from "@/components/Main/Hero/Hero";
 import Projects from "@/components/Main/Projects/Projects";
 import Skills from "@/components/Main/Skills/Skills";
@@ -10,7 +10,7 @@ export default function Home() {
         <Hero />
         <Skills />
         <Projects />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </main>
   );

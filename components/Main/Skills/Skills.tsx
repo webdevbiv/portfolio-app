@@ -2,7 +2,6 @@ import SkillsList from "@/components/Main/Skills/SkillsList";
 import {
   Skills_libraries,
   Skills_style,
-  Skills_tools,
   Skills_base,
   Skills_backend,
   Skills_bundlers,
@@ -16,20 +15,19 @@ const skillCategories = [
   { name: "Libraries", data: Skills_libraries },
   { name: "Bundlers", data: Skills_bundlers },
   { name: "Backend", data: Skills_backend },
-  { name: "Tools", data: Skills_tools },
 ];
 
 const Skills = () => {
   return (
     <section id="skills" className="relative overflow-hidden">
       <div className="container flex-col ">
-        <div className="my-[68px] md:my-20">
+        <div className="mt-[68px] mb-10 md:mb-20">
           <SkillsText />
 
           {skillCategories.map((category, catIndex) => (
             <div
               key={category.name}
-              className="flex flex-row justify-around flex-wrap mb-11  gap-10 items-center"
+              className="flex flex-row justify-around flex-wrap  gap-10 items-center"
             >
               {category.data.map((image, index) => (
                 <SkillsList

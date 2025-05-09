@@ -39,6 +39,7 @@ body {
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
@@ -51,6 +52,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .Welcome-box {
   isolation: isolate;
   overflow: hidden;
@@ -93,6 +95,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
@@ -100,4 +103,9 @@ body {
 .skill-img {
   height: 80px;
   width: 80px;
+}
+
+.hero-img {
+  height: auto;
+  width: 650px;
 }

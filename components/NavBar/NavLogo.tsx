@@ -4,7 +4,7 @@ const NavLogo = () => {
   return (
     <a href="#about-me" className="h-auto w-auto flex items-center  py-2">
       <Image
-        src="/NavLogo.png"
+        src="/logo.png"
         alt="logo"
         priority
         width={50}
