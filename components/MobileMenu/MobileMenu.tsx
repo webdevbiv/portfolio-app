@@ -10,7 +10,7 @@ interface MobileMenuProps {
 
 const MobileMenu = ({ setIsMenuOpen }: MobileMenuProps) => {
   return (
-    <div className="md:hidden absolute flex flex-col items-center h-full pt-[68px]  gap-4 p-4   bg-[#0300148e] backdrop-blur-md text-gray-200 left-0 right-0  z-[90]">
+    <nav className="md:hidden flex flex-col items-center  gap-4 p-4    text-gray-200 ">
       <a
         href="#about-me"
         className="cursor-pointer "
@@ -51,7 +51,7 @@ const MobileMenu = ({ setIsMenuOpen }: MobileMenuProps) => {
           </a>
         ))}
       </div>
-    </div>
+    </nav>
   );
 };
 

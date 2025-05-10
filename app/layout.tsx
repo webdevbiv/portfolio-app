@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import StarsCanvas from "@/components/Main/StarBackground";
+import StarsCanvas from "@/components/StarBackground/StarBackground";
 import NavBar from "@/components/NavBar/NavBar";
 import "react-tooltip/dist/react-tooltip.css";
 
@@ -30,9 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-[#030014] `}
       >
+        <StarsCanvas />
         <NavBar />
         {children}
-        <StarsCanvas />
       </body>
     </html>
   );

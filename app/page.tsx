@@ -5,8 +5,8 @@ import Skills from "@/components/Main/Skills/Skills";
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="">
+    <main>
+      <div>
         <Hero />
         <Skills />
         <Projects />

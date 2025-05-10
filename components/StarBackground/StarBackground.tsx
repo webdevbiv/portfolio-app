@@ -8,9 +8,12 @@ import * as random from "maath/random/dist/maath-random.esm";
 const StarBackground = (props: any) => {
   // @ts-expect-error library
   const ref: any = useRef();
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  );
+  const [sphere] = useState(() => {
+    const count = 1000; // 1000 points
+    const array = new Float32Array(count * 3); // x, y, z per point
+    random.inSphere(array, { radius: 1.2 });
+    return array;
+  });
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
@@ -33,7 +36,7 @@ const StarBackground = (props: any) => {
 };
 
 const StarsCanvas = () => (
-  <div className="w-full h-auto fixed inset-0 z-[20]">
+  <div className="w-full h-auto fixed inset-0 ">
     <Canvas camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
         <StarBackground />
