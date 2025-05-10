@@ -3,10 +3,11 @@
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
-// @ts-ignore
+// @ts-expect-error lib
 import * as random from "maath/random/dist/maath-random.esm";
 
 const StarBackground = (props: any) => {
+  // @ts-expect-error any
   const ref: any = useRef();
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(1000), { radius: 1.5 })
