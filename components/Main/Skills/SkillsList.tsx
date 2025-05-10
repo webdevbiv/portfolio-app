@@ -38,7 +38,9 @@ const SkillsList = ({ src, index, catIndex, skillText }: Props) => {
         transition={{ delay: animationDelay, duration: 0.5 }}
         data-tooltip-id={`tooltip-${catIndex}-${index}-${skillText}`}
         data-tooltip-content={skillText}
-        className="flex justify-center items-center group cursor-pointer w-[80px] h-[80px]"
+        aria-label={skillText}
+        tabIndex={0}
+        className="flex justify-center items-center  group  cursor-pointer w-[80px] h-[80px]"
       >
         <Image
           src={src}

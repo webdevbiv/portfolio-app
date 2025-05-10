@@ -23,23 +23,24 @@ const Skills = () => {
       <div className="container flex-col ">
         <div className="mt-[68px] mb-10 md:mb-20">
           <SkillsText />
-
-          {skillCategories.map((category, catIndex) => (
-            <div
-              key={category.name}
-              className="flex flex-row justify-around flex-wrap  gap-10 items-center"
-            >
-              {category.data.map((image, index) => (
-                <SkillsList
-                  key={image.skill_name}
-                  src={image.Image}
-                  index={index + 1}
-                  catIndex={catIndex}
-                  skillText={image.skill_name}
-                />
-              ))}
-            </div>
-          ))}
+          <div className="[&>div:not(:last-child)]:mb-8">
+            {skillCategories.map((category, catIndex) => (
+              <div
+                key={category.name}
+                className="flex flex-row justify-around flex-wrap items-center gap-8"
+              >
+                {category.data.map((image, index) => (
+                  <SkillsList
+                    key={image.skill_name}
+                    src={image.Image}
+                    index={index + 1}
+                    catIndex={catIndex}
+                    skillText={image.skill_name}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
 
         <SkillsBgVideo />
