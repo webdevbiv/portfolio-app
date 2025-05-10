@@ -26,7 +26,7 @@ const Navbar = () => {
           <NavDesk />
           <div className="flex items-center gap-4">
             <NavDeskSocials />
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center ">
               <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 {isMenuOpen ? (
                   <IoMdClose size={40} className="text-gray-200" />
@@ -48,7 +48,7 @@ const Navbar = () => {
             role="dialog"
             variants={menuVariants}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 right-0 h-full w-3/4 max-w-sm md:hidden flex flex-col pt-[68px] gap-4 p-4 bg-[#03001417] backdrop-blur-md z-[90]"
+            className="fixed top-0 right-0 h-full w-full  md:hidden flex flex-col pt-[68px] gap-4 p-4 bg-[#03001450] backdrop-blur-md z-[90]"
           >
             <MobileMenu setIsMenuOpen={setIsMenuOpen} />
           </motion.div>
